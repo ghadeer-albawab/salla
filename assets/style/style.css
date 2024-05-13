@@ -1,0 +1,967 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.discount{
+    position: absolute;
+    left: 16px;
+    top: 10px;
+}
+.like {
+    border: 1px solid #EEEEEE;
+    padding: 19px 16px;
+}
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #EEEEEE;
+    padding: 16px 21px 16px 45px;
+}
+/*___________________________________________________________header_____________________________________________________________________________________________  */
+/*--------------------------------------- nav top ------------------------------- */
+nav{
+    position: fixed;
+    top:0px;
+    z-index: 1;
+    width: 100%;
+}
+nav .top {
+    padding: 8px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+}
+nav .top ul{
+    display: flex;
+    color: #666666;
+}
+nav .top ul li{
+    padding:0 10px;
+    border-right:1px solid #D6D6D6 ;
+}
+nav .top ul .border {
+    border: none;
+}
+nav button{
+    border: none;
+    background: none;
+    display: none;
+    color: #62D0B6;
+    font-size: 20px;
+}
+nav .top a {
+    color: #666666;
+}
+nav .top .mob li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+} 
+/*--------------------------------------- nav bottom ------------------------------- */
+nav .bottom {
+    padding: 32px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+nav .bottom .right ,nav .bottom .left{
+    display: flex;
+    align-items: center;
+}
+nav .bottom .right a {
+    text-decoration: none;
+    color: #333333;
+    width: 70px;
+    padding-left: 12.6px;
+    font-size: 1.38rem;
+    line-height: 27px;
+}
+nav .right span {
+    padding-left: 5px;
+}
+nav .left .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    padding-left: 32px
+}
+nav .left .container .icon {
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .left a{
+    color: #333333;
+}
+nav .left p {
+    color: #A5A5A5;
+}
+nav .left .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav .left .txt .login{
+    padding-right: 6px;
+}
+/*--------------------------------------- hero -------------------------------- */
+.hero{
+    width: 100%;
+    background-image: url(/assets/img/bghhero.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin-top: 150px;
+    padding: 135px 133px ;
+}
+.hero .best {
+    max-width: 814px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f8f8f8;
+    text-align: center;
+}
+.hero .best .sales ,.bestsales2 .sales{
+    font-size: 48px;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+.hero .best .txt{
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+.hero .best .btn , .bestsales .btn , .bestsales2 .btn{
+    text-decoration: none;
+    padding: 16px 50px;
+    background-color: #62D0B6;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-top: 32px;
+}
+.hero .arrow {
+    border: 1px solid #A5A5A5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*___________________________________________________________Main_____________________________________________________________________________________________  */
+
+/* --------------------------------------- first section ------------------------------- */
+section .container {
+    margin:44px 70px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+section .container .card {
+    display: flex;
+    gap:16px ;
+    padding: 32px;
+    color: #333333;
+}
+section .container .card h6{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+/* --------------------------------------- second section ------------------------------- */
+.digital{
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 70px;
+}
+.digital div {
+    width: 598px;
+    height: 243px;
+    padding: 54px 24px;
+}
+.digital div h6{
+    font-size: 18px;
+    line-height: 25px;
+    color: #666666;
+}
+.digital div h1{
+    font-size: 27px;
+    line-height: 49px;
+    color: #333333;
+}
+.digital div p{
+    color: #333333;
+    line-height: 24px;
+    font-size:16px;
+    padding: 10px 16px;
+    margin-top: 16px;
+}
+.digital .card1 {
+    background-image: url(/assets/img/ph.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.digital .card2{
+    background-image: url(/assets/img/headphone.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+/* --------------------------------------- third section ------------------------------- */
+/* .featured */
+section .featured , .shop .top ,.offers .top{
+    padding: 56px 70px 32px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured .txt h1 , .shop h1 , .offers h1 ,.customer h1 ,.brands h1{
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+}
+.featured .txt p ,.shop p ,.offers p ,.customer p ,.brands p{
+    font-size: 14px;
+    color: #666666;
+}
+.featured a , .shop a ,.offers a{
+    border: 1px solid #62D0B6;
+    border-radius: 4px;
+    padding: 12px 16px 9px 16px;
+    text-decoration: none;
+    color: #62D0B6;
+}
+.cards{
+    padding: 0px 70px 32px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards .card:hover {
+    border: 1px solid #62D0B6;
+}
+.cards .card{
+    width: 288.5px;
+    /* height: 422px; */
+    margin-bottom: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    position: relative;
+}
+.cards .card .top {
+    width: 100%;
+}
+.cards .card .pc{
+    position: absolute;
+    top: 15px;
+    left: 34px;
+    color: #FFFFFF;
+}
+.cards .card .new{
+    position: absolute;
+    top: 14px;
+    left: 29px;
+    color: #FFFFFF;
+}
+.cards .card .deitels{
+    padding: 16px;
+}
+.cards .card .deitels span, .container3 .deitels span{
+    font-size: 12px;
+    color: #62D0B6;
+}
+.cards .card .red ,.container3 .red{
+    color: #F55157;
+    font-size: 18px;
+}
+.card del{
+    font-size: 14px;
+    color: #A5A5A5;
+}
+.cards .card .p1 , .container3 .watch .p1{
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 6px;
+    color: #333333;
+}
+.cards .card .p2 ,.container3 .watch .p2 {
+    font-size: 14px;
+    color: #666666;
+    padding-top: 4px;
+}
+.cards .card .price {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.cards .card .money{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 6PX;
+}
+.cards .card .btn ,.watch .btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.cards .card .cart:hover{
+    background-color: #62D0B6;
+    color: #FFFFFF;
+}
+.cards .card .cart h6{
+    font-size: 15px;
+}
+/* --------------------------------------- 4th section ------------------------------- */
+/* .bestsales */
+.bestsales{
+    width: 100%;
+    background-image: url(/assets/img/lap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    color: #FFFFFF;
+    padding: 90px 70px 126px 70px;
+}
+.bestsales .bigger{
+    font-size: 48px;
+    line-height: 70px;
+}
+.bestsales p {
+    font-size: 16px;
+    max-width: 503px;
+    line-height: 25px;
+    margin: 14px 0 35px 0 ;
+}
+/* --------------------------------------- 5th section ------------------------------- */
+/* .Shop by categories */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 70px;
+    text-align: center;
+}
+.container2 h6{
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* --------------------------------------- 6th section ------------------------------- */
+/* .offers ending soon*/
+.offers .container3{
+    padding: 0 70px 86px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.offers .container3 .watch{
+    max-width:601px ;
+    border: 2px solid #62D0B6;
+    border-radius: 4px;
+    display: flex;
+}
+.offers .container3 .watch .imag {
+    max-width: 302 px;
+    position: relative;
+}
+.offers .deitels{
+    padding: 15px;
+    line-height: 23px;
+}
+.offers .container3 .star{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.offers .container3 .star p {
+    font-size: 10px;
+    color: #A5A5A5;
+}
+.offers .date {  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 16px 0;
+    gap: 8px;
+}
+.offers .date div{
+    width: 83.5px;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+    padding: 5px 16.68px 8px 16.68px;
+}
+.offers .date div h6{
+    font-size: 18px;
+}
+.offers .btn .cart{
+    padding: 0 100px;
+    background-color: #62D0B6;
+    color: #ffffff;
+}
+/* --------------------------------------- 7th section ------------------------------- */
+/* .faster, richer...  */
+.faster {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    gap: 24px;
+    padding: 56px 70px;
+}
+.faster div{
+    max-width:392px ;
+    padding: 32px 56px;
+}
+.faster h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 24px 0 8px 0;
+}
+.faster p{
+    font-size: 14px;
+    color: #666666;
+}
+.faster .shop{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 26px 0;
+}
+.faster .pink{
+    background-color: #FDDCDD;
+}
+.faster .beig{
+    background-color: #FFEFDA;
+}
+.faster .babygreen{
+    background-color: #E0F6F0;
+}
+/* --------------------------------------- 8th section ------------------------------- */
+/* .bestsales2  */
+.bestsales2 {
+    width: 100%;
+    background-image: url(/assets/img/boots.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 24px;
+    color: #FFFFFF;
+}
+.bestsales2 .txt{
+    max-width: 503px;
+    line-height: 25px;
+    font-size: 14px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+.bestsales2 .circle{
+    margin-top: 64px ;
+}
+/* --------------------------------------- 8th section ------------------------------- */
+/* customer reviews  */
+.customer{
+    padding: 56px 70px 76px 70px;
+}
+.customer .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.customer .contain {
+    max-width: 380px;
+    padding: 24px;
+    margin-top: 32px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+}
+.customer .p1{
+    line-height: 25px;
+    font-size: 16px;
+    width: 320px;
+}
+.customer .name{
+    color: #333333;
+    margin-top: 16px;
+    font-size: 18px;
+}
+.customer .p2{
+    font-size: 13px;
+}
+.customer .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+/* --------------------------------------- 9th section ------------------------------- */
+/* Brands */
+.brands {
+    padding: 24px 70px;
+}
+.brands .logo{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------------------------------------   Footer   ------------------------------- */
+/* top  */
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 70px;
+    background-color: #F8F8F8;
+}
+footer .top .subscribe{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+footer .top .icon {
+    background-color:#D6F8F080;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+}
+footer .top img {
+    width: 32px;
+    position: relative;
+    top: 16px;
+    left: 16px;
+}
+footer .top .txt{
+    padding-left: 80px;
+}
+footer .top .p1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+}
+footer .top .p2 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    padding-top: 4px;
+}
+footer .top form input{
+    width: 352px;
+    padding: 10px 0 12px 16px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid #A5A5A5;
+}
+::placeholder {
+    color: #A5A5A5;
+}
+footer .top form button {
+    width: 90px;
+    padding: 11px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #62D0B6;
+    margin-left: 8px;
+    color: #FFFFFF;
+}
+/* bottom */
+footer .bottom{
+    padding: 16px 70px;
+    background-color: #1D1F1F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+footer .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 47.5px;
+}
+footer .right div{
+    display: flex;
+    gap: 10.3px;
+}
+/* ******************************************************************************************************************************* */
+/* products  */
+
+aside {
+    max-width: 282px;
+    height: 50%;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 17px;
+    margin: 157px 30px 20px 70px;
+    position: fixed;
+    top: 0;
+    overflow: scroll;
+}
+aside form .Category , aside form .brand , aside form .color{
+    /* width: 100%; */
+    border-bottom: 1px solid #EEEEEE;
+}
+aside  form div .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+    padding: 16px 0;
+}
+aside form div .radiobox{
+    display: flex;
+    gap: 8px;
+    text-align: end;
+}
+aside .radiobox:hover{
+    color: #333333;
+    border: none;
+}
+aside .addres {
+    color: #333333;
+    font-size: 16px;
+}
+aside form .show {
+    color: #62D0B6;
+    padding-bottom: 23px;
+    padding-top: 6px;
+}
+input[type='radio']{
+    accent-color : #62d0b6;
+    width: 18px;
+    height: 18px;
+}
+.color .container .red {
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background-color: #F55157;
+}
+.color .container .green{
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background-color: #00AF6C;
+}
+.color .container .black {
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background-color: black;
+}
+.color .container .blue{
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background-color: #62D0B6;
+}
+.color .container .yellow{
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background-color: #FFAF44;
+}
+aside form button{
+    background-color:white ;
+    outline: #333333;
+    border-radius: 4px;
+    width: 100%;
+    padding: 11px 0;
+}
+#all-product{
+    display: flex;
+    justify-content: space-between;
+}
+#all-product .cards{
+    padding: 0 70px 32px 382px;
+    margin-top: 156px;
+    gap:20px;
+    /* flex-wrap: nowrap; */
+}
+
+#all-product .cardS .card{
+    height: 422px;
+}
+/* ******************************************************************************************************************************* */
+/* product  details  */
+.productdetails{
+    padding: 186px 70px 97px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.productdetails :first-child{
+    max-width: 600px;
+}
+.iphone {
+    font-size: 24px;
+    line-height: 35.28px;
+
+}
+.productdetails .apple .share {
+    display: flex;
+    padding: 18px 0 18px 0;
+}
+.productdetails .apple .share p {
+    color: #666666;
+    font-size: 14px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #EEEEEE;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.productdetails .apple .share .nobord{
+border: none;
+padding-left: 0px;
+}
+.productdetails .apple .p1 , .similar .p1{
+    color: #666666;
+    line-height: 25px;
+    font-size: 16.5px;
+}
+.productdetails .apple .show{
+    color: #62D0B6;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    font-size: 16px;
+}
+.productdetails .apple .custome{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 16px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    margin-bottom:10px ;
+    color: #333333;
+}
+.productdetails .apple .custome :first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.productdetails .apple .gift {
+    color: #A5A5A5;
+    font-size: 13px;
+    width: 360px;
+}
+.productdetails .apple .custome a {
+    color: #62D0B6;
+    border: 1px solid #62d0b6;
+    border-radius: 4px;
+    text-align: center;
+    padding: 14px 16px 10px 16px;
+}
+.productdetails .apple .add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+}
+.productdetails .apple .add div{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.productdetails .apple .add img {
+    border: 1px solid #EEEEEE;
+    padding: 15px;
+    border-radius: 4px;
+}
+.productdetails .apple .add div p{
+    color: #666666;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 16px;
+}
+.productdetails .apple .btn {
+    margin-top: 24px;
+}
+.productdetails .apple .btn a {
+    padding: 16px 81px;
+    color: #62D0B6;
+    border: 1px solid #62D0B6;
+    border-radius: 4px;
+}
+.productdetails .apple .btn :nth-child(2){
+    background-color: #62D0B6;
+    color: #FFFFFF ;
+    margin-left: 16px;
+}
+.similar .txt {
+    padding: 0 70px 49px 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 992px){
+    html{
+        font-size: 10px;
+    }
+    nav .top{
+        padding: 10px 15px;
+    }
+    nav .top .hid{
+        display: none;
+    }
+    nav button{
+        display: block;
+    }
+    nav .bottom {
+        padding: 10px 15px;
+    }
+    nav .bottom .right a{
+        line-height: 16px;
+        font-size: 16px;
+    }
+    nav .bottom .left .txt{
+        display: none;
+    }
+    .hero{
+        margin-top: 100px;
+        padding: 70px 15px;
+    }
+    .hero .best .sales{
+        font-size: 30px;
+    }
+    section .container{
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    .digital{
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    .digital .card1{
+        background-position: -100px;
+    }
+    .digital .card2 {
+        margin-top: 20px;
+        background-position: -100px;
+    }
+    section .featured ,.faster div{
+        padding: 10px 15px;
+    }
+    .featured .txt h1 ,.shop .top h1 ,.offers .top h1{
+        font-size: 25px;
+    }
+    .featured .txt p ,.shop .top p ,.offers .top p{
+        font-size: 12px;
+    }
+    .cards {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    .cards .card {
+        width: 330px;
+    }
+    .bestsales {
+        padding: 10px 15px;
+        background-position: 35%;
+        height: 300px;
+    }
+    .bestsales .bigger{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .bestsales p{
+        font-size: 12px;
+        width: 290px;
+    }
+    .container2{
+        overflow: scroll;
+        padding: 10px 15px;
+        gap:20px
+    }
+    .shop .top ,.offers .top{
+        padding: 40px 15px;
+    }
+    .offers .container3{
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 20px;
+    }
+    .offers .container3 .watch{
+        flex-wrap: wrap;
+    }
+    .offers .date{
+        flex-wrap: wrap;
+    }
+    .faster{
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+    .bestsales2{
+        padding: 10px 15px ;
+        background-position: 65%;
+    }
+    .bestsales2 .circle{
+        margin-top: 40px;
+    }
+    .customer ,.brands{
+        padding: 10px 15px;
+    }
+    .customer .bottom {
+        overflow: scroll;
+        gap: 20px;
+    }
+    .brands .logo{
+        overflow: scroll;
+        gap: 20px;
+    }
+    footer .top , footer .bottom ,footer .bottom .right{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px 10px;
+    }
+    footer .top form button{
+        margin-top: 20px;
+    }
+    /* *** ***************************** *** **************************** *** ************************ *** ********************************** */
+    #all-product{
+        flex-wrap: wrap;
+    }
+    /* *** ***************************** *** **************************** *** ************************ *** ********************************** */
+    .productdetails{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 150px 15px 20px 15px;
+    }
+    .productdetails .apple{
+        padding: 10px 50px;
+    }
+    .productdetails .apple .btn a {
+        padding: 16px 70px;}
+    
+}
